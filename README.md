@@ -81,7 +81,8 @@ def qiangshafa(url):
  
 6.发送Email模块方便通知
 
-`def sendEmail(message):
+```
+def sendEmail(message):
     from email.mime.text import MIMEText
     msg = MIMEText(message, 'plain', 'utf-8')
     from_addr = '13126506430@163.com'
@@ -96,11 +97,10 @@ def qiangshafa(url):
     server.login(from_addr, password)
     server.sendmail(from_addr, [to_addr], msg.as_string())
     server.quit()
-`
+```
  
 7.运行
-
-`
+```
 class log():
     def __init__(self,id):
         self.id=id
@@ -124,4 +124,4 @@ if __name__ == '__main__':
     url="https://my.oschina.net/action/blog/add_comment?blog={id}".format(id=id)    
     qiangshafa(url)
     sendEmail('over \t'+url+'\t'+str(datetime.datetime.now()))
-` 
+``` 
