@@ -18,7 +18,7 @@ def qiangshafa(url):
     ssl._create_default_https_context = ssl._create_unverified_context
     #url = "https://my.oschina.net/action/blog/add_comment?blog=797134"
     postdata =urllib.parse.urlencode({
-    "content":"抢沙发大作战开始！"
+    "content":"今天是周一哈哈哈！"
     }).encode('utf-8')
     header = {
     "Accept": "application/json, text/javascript, */*; q=0.01",
@@ -29,7 +29,8 @@ def qiangshafa(url):
     "Referer":"https://my.oschina.net/xxiaobian/blog/844061?p=3&temp=1487827633938",
     "Accept-Encoding": "gzip, deflate, br",
     "Accept-Language": "zh-CN,zh;q=0.8,en;q=0.6",
-    "Cookie": "_user_behavior_=c3e70246-ed88-41bf-9ab2-b3201f4dab89; Hm_lvt_f0bcd6b2e12cfb80bab5d6f851cd41ad=1477208617,1477208642,1477272219,1477357544; bdshare_firstime=1482837433584; oscid=x7LWUaBbNqLsKSvRMKPgsAZXGtPXHWWnjmAiwk9XuenLSmi5rfyTZTKKpAX8c7gPIjtylJcPGXlLICY80fws18XIHMXrHE284UEO363Q8YL4q2%2B%2BXKKbwf8IvHMKDOtNwzUlwQxCxep9VGxPcaB%2Fl2wfT58Y4thGfG7SixLLmvM%3D; Hm_lvt_a411c4d1664dd70048ee98afe7b28f0b=1487574213,1487642093,1487758057,1487821660; Hm_lpvt_a411c4d1664dd70048ee98afe7b28f0b=1487822430"
+    "Cookie": "_user_behavior_=c3e70246-ed88-41bf-9ab2-b3201f4dab89; Hm_lvt_f0bcd6b2e12cfb80bab5d6f851cd41ad=1477208617,1477208642,1477272219,1477357544; bdshare_firstime=1482837433584; oscid=x7LWUaBbNqLsKSvRMKPgsAZXGtPXHWWnjmAiwk9XuenLSmi5rfyTZTKKpAX8c7gPIjtylJcPGXlLICY80fws18XIHMXrHE284UEO363Q8YL4q2%2B%2BXKKbwf8IvHMKDOtNwzUlwQxCxep9VGxPcaB%2Fl2wfT58Y4thGfG7SixLLmvM%3D; Hm_lvt_a411c4d1664dd70048ee98afe7b28f0b=1487642093,1487758057,1487821660,1487916103; Hm_lpvt_a411c4d1664dd70048ee98afe7b28f0b=1488157055"
+
     }
     req = urllib.request.Request(url,postdata,header)
     print(urllib.request.urlopen(req).read().decode('utf-8'))
@@ -53,7 +54,7 @@ def hasnews(preid):
         if preid==None:
             return id
         if id!=str(preid):
-            return str(sourp.find_all(class_='blog-title',limit=1)[0]['href'])
+            return id
         else:
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+str(gilslist[0].get_text().strip().replace('发布','').strip()))
             if flag:
