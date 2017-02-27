@@ -80,21 +80,8 @@ def hasnews(preid):
 
 
 def sendEmail(message):
-    from email.mime.text import MIMEText
-    msg = MIMEText(message, 'plain', 'utf-8')
-    from_addr = '13126506430@163.com'
-    password = 'whl05043016'
-    # 输入收件人地址:
-    to_addr = '13126506430@163.com'
-    # 输入SMTP服务器地址:
-    smtp_server = 'smtp.163.com'
-
-    import smtplib
-    server = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25
-    server.set_debuglevel(1)
-    server.login(from_addr, password)
-    server.sendmail(from_addr, [to_addr], msg.as_string())
-    server.quit()
+    pass
+   
 
 class log():
     def __init__(self,id):

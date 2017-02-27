@@ -32,8 +32,8 @@
       <file leaf-file-name="osc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/osc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41785252" vertical-offset="1147" max-vertical-offset="1920">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="122" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.37904269" vertical-offset="952" max-vertical-offset="1725">
+              <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
               <folding>
                 <element signature="e#37#50#0" expanded="true" />
               </folding>
@@ -427,8 +427,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/osc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41785252" vertical-offset="1147" max-vertical-offset="1920">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="122" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.37904269" vertical-offset="952" max-vertical-offset="1725">
+          <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
           <folding>
             <element signature="e#37#50#0" expanded="true" />
           </folding>
