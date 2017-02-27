@@ -71,14 +71,11 @@ def hasnews(preid):
                 print('need sleep {second} second ...'.format(second=abs(sec)))
                 time.sleep(sec)
             return None
-            # hasnews()
-            # print(time.strftime("%Y/%m/%d %H:%M:%S", time.localtime()))
     except ValueError as e:
         sendEmail('发生异常了！'+str(e))
         fr=open('log.txt')
         fr.write(str(e))
         fr.close()
-       # sourp.find_all(class_='blog-title',limit=1)['href']
 
 
 
